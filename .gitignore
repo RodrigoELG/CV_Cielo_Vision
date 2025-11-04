@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Logs and cache
+*.log
+*.tmp
+.cache/
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model weights and datasets
+*.pt
+*.onnx
+*.tflite
+*.h5
+*.weights
+datasets/
+outputs/
+checkpoints/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
