@@ -30,7 +30,7 @@ The system detects human attributes such as gender, age, range, and potentially 
 
 ##  Setup Instructions
 
-*The project runs on virtual enviromets to avoid diverse library version conflicts on the system. Remember to activate and exit the virtual enviroment whenever working on the project:
+*The project runs on virtual environments to avoid diverse library version conflicts on the system. Remember to activate and exit the virtual environment whenever working on the project:
 
 source venv/bin/activate 
 deactivate 
