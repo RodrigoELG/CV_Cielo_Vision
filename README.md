@@ -30,6 +30,11 @@ The system detects human attributes such as gender, age, range, and potentially 
 
 ##  Setup Instructions
 
+*The project runs on virtual enviromets to avoid diverse library version conflicts on the system. Remember to activate and exit the virtual enviroment whenever working on the project:
+
+source venv/bin/activate 
+deactivate 
+
 1. Clone this repository  
    ```bash
    git clone https://github.com/RodrigoELG/CVCITUS.git
