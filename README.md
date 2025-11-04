@@ -22,8 +22,8 @@ The system detects human attributes such as gender, age, range, and potentially 
 
 | Model | Description | Status |
 |--------|--------------|---------|
-| [MediaPipe Test](models/mediapipe_test) | Hand and face landmark detection |  Ready |
-| [YOLO Age/Gender](models/yolo_age_gender) | Real-time age and gender attribute estimation |  In progress |
+| [MediaPipe Test](models/mediapipe_test) | Hand and face landmark detection |  Planned |
+| [YOLO Age/Gender](models/yolo_age_gender) | Real-time age and gender attribute estimation |  Planned |
 | [OpenVINO Optimization](models/openvino_pipeline) | Optimized inference for low-power hardware (Jetson, NUC) | Planned |
 
 ---
