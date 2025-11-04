@@ -29,7 +29,7 @@ def run_face_detection():
                     mp_drawing.draw_detection(frame_rgb, detection)
             
             #Show window with detections
-            cv2.imshow('MediaPipe Face Detection Test',frame_rgb)
+            cv2.imshow('MediaPipe Face Detection Test',cv2.cvtColor(frame_rgb, cv2.COLOR_RGB2BGR))
 
             #Break the loop by pressing the "space" key
             if cv2.waitKey(5) & 0xFF == ord(' '):
