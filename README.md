@@ -1,6 +1,6 @@
 # CVCITUS
 
-**Computer Vision Cielo I.T. U.S.**
+**Computer Vision Cielo IT U.S.**
 
 Project focused on developing a system that uses open-source computer vision models to analyze live video feeds in real time.  
 The system detects human attributes such as gender, age, range, and potentially other visual features.
