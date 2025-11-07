@@ -163,7 +163,7 @@ def main():
             print(json.dumps(output))
 
             cv2.imshow("Webcam Face Detection + Tracking (Phase1)", frame)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
+            if cv2.waitKey(1) & 0xFF == ord(' '):
                 break
 
     cap.release()
