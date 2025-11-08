@@ -1,37 +1,64 @@
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.pkl
+*.py[cod]
+*.so
 
-# Virtual environments
-venv/
-env/
+# Virtual environments (any level)
 .venv/
+venv/
+*/.venv/
+*/venv/
 
-# Logs and cache
-*.log
-*.tmp
-.cache/
-logs/
-
-# OS files
+# Editors
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
 
-# Model weights and datasets
-*.pt
-*.onnx
-*.tflite
-*.h5
-*.weights
+# Packaging / build
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs: ignore files inside logs/, keep folder with .gitkeep
+*.log
+cv_model_testing/**/logs/*
+!cv_model_testing/**/logs/.gitkeep
+
+# Results: ignore generated outputs, keep folder with .gitkeep
+cv_model_testing/**/results/*
+!cv_model_testing/**/results/.gitkeep
+
+# Weights / large artifacts, keep folder with .gitkeep
+cv_model_testing/**/weights/*
+!cv_model_testing/**/weights/.gitkeep
+
+# Datasets / outputs / checkpoints (global)
 datasets/
 outputs/
 checkpoints/
 
+# Common model formats
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+*.h5
+*.weights
+*.engine        # TensorRT
+*.blob          # OpenVINO Myriad
+*.xml           # OpenVINO IR
+*.bin           # OpenVINO IR
+*.pb            # TF frozen graph
+
 # Jupyter
 .ipynb_checkpoints/
 
-# VS Code
-.vscode/
+# Large raw data; keep samples only
+data/raw/**
