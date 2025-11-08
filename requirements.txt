@@ -1,16 +1,7 @@
-# Core dependencies
-opencv-python
+# Root: common, light utilities only
 numpy
+opencv-python
+tqdm
 pandas
 matplotlib
 
-# Vision and ML frameworks
-torch
-torchvision
-mediapipe
-
-# Utils
-tqdm
-
-# Optional (for OpenVINO/Jetson tests)
-openvino
