@@ -1,0 +1,16 @@
+# --- Core Dependencies ---
+numpy
+opencv-python
+matplotlib
+tqdm
+Pillow
+
+# --- AI / CV Frameworks ---
+deepface==0.0.92
+ultralytics>=8.0.0
+insightface>=0.7
+onnxruntime>=1.14.0
+
+# --- Optional / Controlled TF version ---
+tensorflow==2.15.0; platform_machine != "aarch64"
+# For Jetson Nano (ARM64), install TensorFlow manually.
