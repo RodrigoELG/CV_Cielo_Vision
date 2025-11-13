@@ -30,7 +30,7 @@ CAM_INDEX = 0
 FRAME_W, FRAME_H = 640, 480  # Resolución del video
 CONF_TH = 0.35  # Umbral de confianza para detección de caras
 IOU_TH = 0.5   # Umbral de IoU para filtrar detecciones duplicadas
-ANALYZE_EVERY_N_FRAMES = 1  # Analizar atributos cada N frames (1 = todos)
+ANALYZE_EVERY_N_FRAMES = 10  # Analizar atributos cada N frames (1 = todos)
 PAD_RATIO = 0.25  # Padding adicional alrededor de la cara detectada
 MIN_FACE = 40     # Tamaño mínimo de cara para procesar
 ACTIONS = ['age', 'gender']  # Atributos a analizar con DeepFace
@@ -193,8 +193,8 @@ def analyze_face_crop(crop_bgr):
             actions=ACTIONS,
             detector_backend="skip",  # No detectar caras, usar toda la imagen
             enforce_detection=False,
-            # models={"age": AGE_MODEL, "gender": GENDER_MODEL}, 
-            # prog_bar=False,
+            #models={"age": AGE_MODEL, "gender": GENDER_MODEL}, 
+            #prog_bar=False,
         )
         
         if isinstance(out, dict):
