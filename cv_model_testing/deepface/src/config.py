@@ -35,7 +35,7 @@ class Config:
     
     # Detection & Tracking
     device: str = "auto"  # auto|cuda|cpu
-    yolo_model: str = "weights/yolov8n-face-lindevs.pt"
+    yolo_model: str = "/home/rodrigo/Documents/CV_Cielo_Vision/cv_model_testing/deepface/src/weights/yolov8n-face-lindevs.pt"
     min_confidence: float = 0.35
     iou_threshold: float = 0.5
     tracker_max_age: int = 30      # frames before track deletion

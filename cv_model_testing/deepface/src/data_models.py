@@ -317,7 +317,6 @@ class FramePacket:
         """Calculate frame age in milliseconds."""
         return (time.time() - self.timestamp) * 1000
     
-    @property
     def is_stale(self, threshold_ms: float = 100) -> bool:
         """Check if frame is stale (older than threshold)."""
         return self.age_ms > threshold_ms
