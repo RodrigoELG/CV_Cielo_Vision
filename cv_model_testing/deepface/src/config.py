@@ -34,10 +34,13 @@ def load_config():
     args = parser.parse_args()
     cfg = vars(args)
 
-    # load YAML if provided
+
     if args.config and os.path.exists(args.config):
         with open(args.config, "r") as f:
             y = yaml.safe_load(f)
         cfg.update(y)
+
+    # Remove keys not in the dataclass
+    cfg.pop("config", None)
 
     return Config(**cfg)

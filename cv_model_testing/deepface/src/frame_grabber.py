@@ -7,7 +7,11 @@ from collections import deque
 class FrameGrabber(threading.Thread):
     def __init__(self, source, width, height):
         super().__init__(daemon=True)
-        self.source = source
+        try:
+            self.source = int(source)
+        except ValueError:
+            self.source = source
+            
         self.width = width
         self.height = height
         self.cap = None
